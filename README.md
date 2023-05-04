@@ -21,7 +21,9 @@ To install and run the project on XAMPP, follow the steps below:
 
 - Install XAMPP on your computer. You can download XAMPP from the official website at https://www.apachefriends.org/download.html.
 - Clone the repository to your computer by running the following command in the terminal:
+```
   git clone https://github.com/purkos/ScoreBoardPro.git
+```
 - Copy the repository folder to the "htdocs" folder in the XAMPP installation directory.
 - Start the XAMPP control panel and start the Apache and MySQL services.
 - Open a web browser and go to http://localhost/phpmyadmin/. This will open the phpMyAdmin interface.
