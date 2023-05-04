@@ -30,4 +30,4 @@ To install and run the project on XAMPP, follow the steps below:
 - Create a new database for the project by clicking on "New" in the left sidebar and entering a name for the database.
 - Import the database schema from the "database.sql" file in the project folder by clicking on the "Import" tab, selecting the file, and clicking "Go".
 - Update the database configuration in the "db_connection.php" file in the project folder /src/components/user/db and "sign_in.php", "sign_up.php? in /src/php to match your MySQL database settings (database name, username, password, and host).
-- Open a web browser and go to http://localhost/public to access the project. Replace <repository> with the name of the repository folder in the "htdocs" folder.
+- Open a web browser and go to http://localhost/public to access the project. 
