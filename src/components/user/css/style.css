@@ -1,0 +1,552 @@
+:root {
+  --main-bgColor: rgb(255, 255, 255);
+  --shadow-bgColor: rgb(230, 230, 230);
+  --main-fontColor: rgb(130, 130, 130);
+  --secondary-heading: ##2b8a3e;
+  --secondary-bgColor: #25a244;
+  --shadow-color_1: #1a7130;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  background-color: rgba(250, 252, 250);
+  position: relative;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2.5fr 10fr;
+}
+
+.header {
+  position: fixed;
+  height: 100vh;
+  min-width: 20%;
+  background-color: var(--main-bgColor);
+  color: var(--main-fontColor);
+  top: 0;
+  left: 0;
+  padding: 4.8rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-row: 1/-1;
+  box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.05);
+  z-index: 101;
+}
+
+.main__nav {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.open-menu {
+  display: none;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0 2.4rem;
+}
+
+
+.nav__item {
+  display: flex;
+  /* border-bottom: 1px solid var(--shadow-bgColor); */
+  transition: all 0.3s;
+  margin: 1.5rem 0rem;
+  background-color: rgb(245, 245, 245);
+  ;
+  color: rgb(130, 130, 130);
+  border-radius: 10rem;
+  text-decoration: none;
+  padding: 0.8rem 10%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav__item:link,
+.nav__item:visited {
+  color: rgb(130, 130, 130)
+}
+
+.nav__item:hover,
+.nav__item:active {
+  color: var(--secondary-bgColor)
+}
+
+.nav__item li {
+  transition: all 0.3s;
+}
+
+.nav__item:hover li {
+  transform: scale(1.1);
+}
+
+.nav__item li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-icon {
+  font-size: 2.4rem;
+}
+
+.user__list {
+  list-style: none;
+  padding: 0 2.4rem;
+}
+
+main {
+  grid-column: 2/-1;
+  padding: 0rem 4.8rem;
+  overflow: scroll
+}
+
+section {
+  display: grid;
+}
+
+.navbar {
+  height: 7rem;
+  box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.05);
+  background-color: rgb(255, 255, 255);
+  grid-column: 2/-1;
+  display: flex;
+  padding: 2.4rem;
+  margin-bottom: 4.8rem;
+  border-radius: 0 0 1rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page__title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: var(--secondary-bgColor)
+}
+
+.navbar__list {
+  width: 30%;
+  position: relative;
+}
+
+.navbar__list label {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--main-fontColor)
+}
+
+
+.navbar__list input {
+  font-size: 1.5rem;
+  padding: 1rem 7rem 1rem 3rem;
+  border: none;
+  /* border-bottom: 1px solid var(--main-fontColor); */
+  color: var(--main-fontColor);
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+  border-radius: 1rem;
+}
+
+.navbar__list input::placeholder {
+  color: rgba(150, 150, 150, 0.5);
+}
+
+.searching-icon {
+  position: absolute;
+  font-size: 1.8rem;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  color: var(--main-fontColor);
+}
+
+
+.user__profile__logo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 4.8rem;
+
+}
+
+.user__profile__logo:hover {
+  cursor: pointer;
+}
+
+.user__profile__img { 
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.10);
+  color: rgb(200, 200, 200);
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  max-width: 4rem;
+  max-height: 4rem;
+  overflow: hidden;
+}
+.user__profile__img img {
+  max-width: 4rem;
+  max-height: 4rem;
+}
+
+.user__profile__img_icon {
+  font-size: 3rem;
+  color: inherit;
+}
+
+.user__profile__img:hover {
+  color: rgb(130, 130, 130);
+  box-shadow: 0 0 0.5rem 0.3rem rgba(0, 0, 0, 0.10);
+}
+
+.user__profile__info {
+  color: #444;
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user__profile__role {
+  color: rgb(200, 200, 200);
+  font-size: 1.2rem;
+  font-weight: 400;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+.user__profile_link {
+  text-decoration: none;
+}
+
+
+
+/*
+  SOCCERS CARDS
+*/
+
+.soccers__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5rem;
+  row-gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.soccer__card {
+  background-color: rgba(255, 255, 255);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.delete__user span {
+  position: absolute;
+  top:0;
+  right: 0;
+  text-decoration: none;
+  color:rgb(100, 100, 100);
+
+  width: auto;
+  height: auto;
+  padding:0 1.2rem;
+  transition: all 0.3s;
+  font-size:3.0rem;
+  font-weight: 500;
+  border-radius: .5rem;
+  display: flex;
+}
+
+.edit__user i{
+  position: absolute;
+  top:1.5rem;
+  right: 3rem;
+  text-decoration: none;
+  color:rgb(100, 100, 100);
+
+  width: auto;
+  height: auto;
+  padding:0 1.2rem;
+  transition: all 0.3s;
+  font-size:2.4rem;
+  font-weight: 500;
+  border-radius: .5rem;
+  display: flex;
+}
+
+
+.ph-identification-badge-fill,
+.ph-cake-fill,
+.ph-shield-fill {
+  transition: all 0.3s;
+}
+
+.soccer__card:hover .ph-star-fill {
+  color: gold;
+}
+
+.soccer__card:hover .ph-identification-badge-fill {
+  color: royalblue;
+}
+
+.soccer__card:hover .ph-cake-fill {
+  color: rgb(238, 124, 143)
+}
+
+.soccer__card:hover .ph-shield-fill {
+  color: #25a244;
+}
+
+.soccer__card:hover .ph-info-fill {
+  color: rgba(174, 0, 255, 0.596);
+
+}
+
+.profile__view {
+  text-decoration: none;
+  color: rgb(130, 130, 130);
+}
+
+.profile__view:link,
+span .profile__view:visited span {
+  color: rgb(130, 130, 130);
+}
+
+.soccer__img {
+  max-width: 20rem;
+  max-height: 25rem;
+}
+
+.soccer__card:hover {
+  transform: translateY(-0.8rem);
+  box-shadow: 0 0 0.5rem 0.3rem rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.soccer__info {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  font-weight: 400;
+  gap: 1rem;
+  color: var(--main-fontColor);
+  margin: 0 auto;
+}
+
+.soccer__name__surname {
+  display: flex;
+  gap: 1rem;
+}
+
+.soccer__info_item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.soccer__icon {
+  font-size: 2.4rem;
+  color: var(--main-fontColor)
+}
+
+.soccer__rate {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 1rem;
+}
+
+.form__soccer_rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+
+.rate,
+.rate__btn {
+  font-size: 1.5rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  color: var(--main-fontColor);
+  background-color: transparent;
+  outline: none;
+  background-color: rgb(240, 240, 240);
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+
+.rate:hover,
+.rate__btn:hover {
+  cursor: pointer;
+}
+
+.rate__btn:hover {
+  background-color: var(--shadow-color_1);
+}
+
+.rate {}
+
+.rate__btn {
+  background-color: var(--secondary-bgColor);
+  color: rgb(255, 255, 255);
+}
+
+.soccer__rate .ph-star-fill {
+  transition: all 0.3s;
+}
+
+
+
+.ratings__error, .edit__footballer  {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 2rem 8rem;
+  background-color: rgba(240, 240, 240);
+  color: rgb(50, 50, 50);
+  font-weight: 600;
+  position: fixed;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: .5rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: all 0.5s;
+}
+.edit__footballer {
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.btn__close_error,.btn__close_edit {
+  border: none;
+  font-size: 3.5rem;
+  color: rgb(50, 50, 50);
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  transition: all 0.3s;
+  background-color: rgba(240, 240, 240);
+}
+
+.btn__close_error:hover, .btn__close_edit {
+  cursor: pointer;
+  color: rgb(50, 50, 50);
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 120;
+  transition: all 0.5s;
+}
+.profile__icon {
+  width:3rem;
+}
+
+.edit__footballer {
+  width: auto;
+  padding: 2.4rem 4.8rem;
+  margin:  auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.05);
+  border-radius: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit__footballer_form {
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.edit__footballer_form label {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.edit__footballer_form input {
+  font-size: 1.7rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+
+.edit__footballer_form button {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-top: 1rem;
+}
+.edit__footballer_form div {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.btn__close_edit {
+  background-color:rgb(240,240,240):
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+#canvas {
+  /* justify-self: center; */
+  /* align-self: center; */
+  width: 50%;
+  /* height: rem; */
+}

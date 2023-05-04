@@ -1,0 +1,253 @@
+/*  1366 px*/
+
+@media (max-width:85em) {
+  .soccers__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .soccer__card {}
+
+  .history__accordion {
+    grid-template-columns: 1fr;
+  }
+
+  .user__info form {
+    grid-template-columns: 1fr;
+    width: 60%;
+  }
+
+  .image__box {
+    justify-self: center;
+    align-self: center;
+    width: 80%
+  }
+}
+
+/* 1200px*/
+@media (max-width:75em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* 1096px*/
+@media (max-width:68.5em) {
+  html {
+    font-size: 55%
+  }
+}
+
+/* 992px*/
+@media (max-width:63em) {
+  html {
+    font-size: 53%;
+  }
+
+  .nav__list,
+  .user__list {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    grid-template-columns: 1fr 8fr;
+  }
+
+  /* HAMBURGER MENU*/
+  .main__nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 10rem;
+    font-size: 2.5rem;
+    /* transform: translateX(100%); */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    flex-direction: column;
+
+
+ 
+    opacity: 0;
+
+
+    pointer-events: none;
+
+    visibility: hidden;
+  }
+
+  .menu-active {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .open-menu {
+    position: absolute;
+    color: rgba(50, 50, 50, 1);
+    top: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 4rem;
+    cursor: pointer;
+  }
+
+  .header {
+    min-width: 10rem;
+  }
+
+}
+
+/* 864px*/
+@media (max-width:54em) {
+  html {
+    font-size: 50%;
+  }
+
+  .ranking__card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .position__footballer__info {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .ranking__card {
+    font-size: 1.8rem;
+  }
+.users,.user__info {width:100%};
+
+
+}
+
+/* 736px*/
+@media (max-width:46em) {
+  html {
+    font-size: 48%;
+  }
+
+  .user__info,
+  .user__card {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footballer__info {
+    justify-self: center;
+  }
+
+  .profile__img {
+    grid-column: 1/-1;
+    width: 50%;
+    justify-self: center;
+  }
+
+  .general__info {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+ 
+  .ph-pencil, .delete__user span {
+    transform:scale(1.5);
+} 
+.ph-pencil {margin-right:2rem}
+
+  .btn__open_modal {
+    top: 0;
+    right: 0;
+  }
+
+  .general__info_item {
+    gap:1.5rem;
+  }
+
+  table {
+    font-size: 40%;
+  }
+
+  table td {
+    padding: 0rem;
+  }
+
+
+
+}
+
+/* 500px */
+@media (max-width:32em) {
+  html {
+    font-size: 40%;
+  }
+
+  .history__accordion {
+    grid-template-columns: 1fr 1fr;
+    font-size: 10rem;
+  }
+
+  .position__footballer__info {
+    display: flex;
+  }
+
+  .history__card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .edit__rating {
+    font-size: 1.6rem;
+  }
+  .edit__footballer_form label {
+    font-size:1.4rem;
+  }
+  .edit__footballer_form input {
+	font-size:1.4rem;
+    
+  }
+.user__info,
+  .user__card {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+}
+
+@media (max-width:27em) {
+  html {
+    font-size: 35%;
+  }
+
+  .history__accordion {
+    grid-template-columns: 1fr;
+  }
+.user__card{font-size:1.2rem}
+ 
+}
+
+@media (max-width:22em) {
+  html {
+    font-size: 28%;
+  }
+ 
+ 
+}

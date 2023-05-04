@@ -1,0 +1,235 @@
+:root {
+  --main-bgColor: rgb(255, 255, 255);
+  --shadow-bgColor: rgb(230, 230, 230);
+  --main-fontColor: rgb(130, 130, 130);
+  --secondary-heading: ##2b8a3e;
+  --secondary-bgColor: #25a244;
+  --shadow-color_1: #1a7130;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  background-color: rgba(250, 252, 250);
+  position: relative;
+}
+
+.footballer {
+  padding: 2.4rem 4.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  row-gap: 3rem;
+  background-color: rgb(240, 240, 240);
+  ;
+  border-radius: 1rem;
+  box-shadow: 0 0 .2rem .1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.footballer__info {
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2.4rem;
+}
+
+.number {
+  padding: 0rem 1.2rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: white;
+  background-color: #25a244;
+}
+
+.name {
+  color: rgb(50, 50, 50);
+  font-weight: 700;
+}
+
+.profile__img {
+  max-width: 50rem;;
+  max-height:35rem;
+}
+
+.general__info {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: rgb(50, 50, 50);
+  /* background-color: rgb(230, 230, 230); */
+
+  justify-content: center;
+  padding: 0 2.4rem;
+}
+
+.general__info_item {
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.general__info_item_heading {
+  font-weight: 600;
+}
+
+.footballer__stats {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+}
+
+.league {}
+
+table {
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+table tbody {
+  overflow: scroll;
+}
+
+table thead td {
+  background-color: rgb(200, 200, 200);
+  ;
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+  font-size: 1.4rem;
+  /* border: 1px solid #54585d; */
+}
+
+table tbody td {
+  color: #636363;
+  border: 1px solid #dddfe1;
+  font-size: 1.4rem;
+}
+
+table tbody tr {
+  background-color: #f9fafb;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.league {
+  color: red;
+  background-color: #25a244;
+  color: rgb(240, 240, 240);
+  padding: 1.2rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.footballer__stats_error {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.btn__open_modal {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  border-radius: .5rem;
+  text-transform: uppercase;
+  background-color: #25a244;
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.btn__open_modal:hover {
+  background-color: #1a7130;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  border-radius: .5rem;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+.add__footballer_stats_form {
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 2.5rem;
+}
+.add__footballer_stats_form {
+  font-size: 1.7rem;
+    font-weight: 500;
+}
+.add__footballer_stats_form input {
+  font-size: 1.7rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+}
+
+.add__footballer_stats_form button {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-top: 1rem;
+  padding:0.6rem 1.2rem;
+  background-color: #25a244;
+  color:rgb(255, 255, 255);
+  font-weight: 500;
+  font-size:1.8rem;
+  border:none;
+  outline:none;
+  border-radius: .5rem;
+  transition: all .3s;
+}
+.add__footballer_stats_form button:hover {
+  cursor:pointer;
+  background-color: #1a7130;;
+}
+
+.btn__close_modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}

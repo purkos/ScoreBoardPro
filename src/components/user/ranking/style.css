@@ -1,0 +1,103 @@
+:root {
+  --main-bgColor: rgb(255, 255, 255);
+  --shadow-bgColor: rgb(230, 230, 230);
+  --main-fontColor: rgb(130, 130, 130);
+  --secondary-heading: ##2b8a3e;
+  --secondary-bgColor: #25a244;
+  --shadow-color_1: #1a7130;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  background-color: rgba(250, 252, 250);
+  position: relative;
+
+}
+
+/* RANKING */
+.ranking {
+  height: 100vh;
+  padding:2.4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+.soccer__icon {
+  color:gold;
+}
+
+.ranking__card {
+  width:100%;
+  background-color: var(--main-bgColor);
+  box-shadow: 0 0 0.5rem 0.1rem rgba(0,0,0,0.05);
+  border-radius:.3rem;;
+  padding:2rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color:var(--main-fontColor);
+  transition:all 0.3s
+}
+.ranking__card:hover {
+  box-shadow: 0 0 1rem 0.4rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.position__footballer__info {
+  display: flex;
+  align-items: center;
+  gap:2.5rem;
+}
+.position {
+  padding:0.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ranking__card__img {
+  width:5rem;
+  border-radius: 0.5rem;
+}
+.rating__counter {
+  border-radius:10rem;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0.5rem 3rem;
+}
+.player__rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+}
+.soccer__icon {
+  font-size:2rem;
+  color:gold;
+  justify-self: center;
+  align-self: center;
+}
+.footballer_info {
+  color:rgb(200, 200, 200);
+  font-weight: 400;
+}
+main {
+  height: 100vh;
+  width: 100%;
+}
