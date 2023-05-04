@@ -16,6 +16,19 @@ ScoreBoardPro is a project aimed at providing a platform for rating soccer playe
 - Addition of new players
 - Deletion of players and users
 
+### Started page
+
+<img width="1418" alt="Zrzut ekranu 2023-05-4 o 19 10 34" src="https://user-images.githubusercontent.com/74377061/236280543-96eb71ae-7ba7-45f8-b990-163bbc6b3bcd.png">
+<img width="1419" alt="Zrzut ekranu 2023-05-4 o 19 11 10" src="https://user-images.githubusercontent.com/74377061/236280570-5af11619-68ca-4821-b740-02d31630eed3.png">
+<img width="1418" alt="Zrzut ekranu 2023-05-4 o 19 11 24" src="https://user-images.githubusercontent.com/74377061/236280603-e8dbd6c1-279b-4eab-9b56-31e4134d15fd.png">
+
+### Logged user
+
+<img width="1414" alt="Zrzut ekranu 2023-05-4 o 19 12 12" src="https://user-images.githubusercontent.com/74377061/236280636-5d54f843-cf0a-4e1d-ad55-e958331d4017.png">
+<img width="1423" alt="Zrzut ekranu 2023-05
+<img width="1418" alt="Zrzut ekranu 2023-05-4 o 19 12 51" src="https://user-images.githubusercontent.com/74377061/236280690-79f9bf2c-3e1b-45ce-b744-6b1f3c18c390.png">
+
+
 ## Installation instructions:
 To install and run the project on XAMPP, follow the steps below:
 
